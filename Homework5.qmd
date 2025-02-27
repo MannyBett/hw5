@@ -3,14 +3,13 @@ title: Homework5
 author: Manny Bettencourt
 date: 2025-02-25
 output:
-  html: 
+  html:
     toc: true
     toc_depth: 2
   pdf: default
-format: html
+bibliography: reference.bib
 editor:
   render-on-save: true
-bibliography: reference.bib
 ---
 
 ## Question 2

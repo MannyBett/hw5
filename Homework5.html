@@ -115,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="question-2" class="level2">
 <h2 class="anchored" data-anchor-id="question-2">Question 2</h2>
-<div id="bd619493" class="cell" data-execution_count="1">
+<div id="3fa4f427" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -124,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="question-3" class="level2">
 <h2 class="anchored" data-anchor-id="question-3">Question 3</h2>
-<div id="dabb2fae" class="cell" data-execution_count="2">
+<div id="73cbef80" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(wdi.describe())</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(wdi.adult_literacy_rate.describe())</span>
@@ -216,12 +216,12 @@ Name: life_expectancy, dtype: float64</code></pre>
 <h2 class="anchored" data-anchor-id="question-4">Question 4</h2>
 <section id="figure-1" class="level3">
 <h3 class="anchored" data-anchor-id="figure-1">Figure 1</h3>
-<div id="20bdb101" class="cell" data-execution_count="3">
+<div id="7f2a05c9" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plt.hist(wdi[<span class="st">'life_expectancy'</span>],bins<span class="op">=</span><span class="dv">50</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Life Expectancy Histogram"</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Life Expectancy"</span>)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>Text(0, 0.5, 'Count')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
@@ -235,12 +235,12 @@ Name: life_expectancy, dtype: float64</code></pre>
 </section>
 <section id="figure-2" class="level3">
 <h3 class="anchored" data-anchor-id="figure-2">Figure 2</h3>
-<div id="6b3c543c" class="cell" data-execution_count="4">
+<div id="b6211783" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(wdi[<span class="st">'adult_literacy_rate'</span>], wdi[<span class="st">'unemployment_rate'</span>])</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Adult Literacy Rate vs Unemployment Rate"</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Adult Literacy Rate"</span>)</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Unemployment Rate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>Text(0, 0.5, 'Unemployment Rate')</code></pre>
 </div>
 <div class="cell-output cell-output-display">
@@ -255,14 +255,14 @@ Name: life_expectancy, dtype: float64</code></pre>
 </section>
 <section id="question-5" class="level2">
 <h2 class="anchored" data-anchor-id="question-5">Question 5</h2>
-<div id="6a883b02" class="cell" data-execution_count="5">
+<div id="06509753" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mean_values <span class="op">=</span> wdi[[<span class="st">'adult_literacy_rate'</span>, <span class="st">'unemployment_rate'</span>, <span class="st">'life_expectancy'</span>]].mean()</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>std_values <span class="op">=</span> wdi[[<span class="st">'adult_literacy_rate'</span>, <span class="st">'unemployment_rate'</span>, <span class="st">'life_expectancy'</span>]].std()</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>summary_table <span class="op">=</span> pd.DataFrame({<span class="st">'Mean'</span>: mean_values, <span class="st">'Standard Deviation'</span>: std_values})</span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>summary_table</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 
 

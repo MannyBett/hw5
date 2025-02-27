@@ -119,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="initial-exploring" class="level1">
 <h1>Initial Exploring</h1>
-<div id="5b125384" class="cell" data-execution_count="1">
+<div id="ca4c6a14" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -216,7 +216,7 @@ Name: life_expectancy, dtype: float64</code></pre>
 </section>
 <section id="figure-1" class="level1">
 <h1>Figure 1</h1>
-<div id="2a10b0f9" class="cell" data-execution_count="2">
+<div id="80325c28" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>plt.hist(wdi[<span class="st">'life_expectancy'</span>],bins<span class="op">=</span><span class="dv">50</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Life Expectancy Histogram"</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Life Expectancy"</span>)</span>
@@ -236,7 +236,7 @@ Name: life_expectancy, dtype: float64</code></pre>
 </section>
 <section id="figure-2" class="level1">
 <h1>Figure 2</h1>
-<div id="50bc92cb" class="cell" data-execution_count="3">
+<div id="be097aba" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(wdi[<span class="st">'adult_literacy_rate'</span>], wdi[<span class="st">'unemployment_rate'</span>])</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Adult Literacy Rate vs Unemployment Rate"</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Adult Literacy Rate"</span>)</span>
@@ -256,7 +256,7 @@ Name: life_expectancy, dtype: float64</code></pre>
 </section>
 <section id="table-1" class="level1">
 <h1>Table 1</h1>
-<div id="255714ad" class="cell" data-execution_count="4">
+<div id="4104da7c" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mean_values <span class="op">=</span> wdi[[<span class="st">'adult_literacy_rate'</span>, <span class="st">'unemployment_rate'</span>, <span class="st">'life_expectancy'</span>]].mean()</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>std_values <span class="op">=</span> wdi[[<span class="st">'adult_literacy_rate'</span>, <span class="st">'unemployment_rate'</span>, <span class="st">'life_expectancy'</span>]].std()</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
